@@ -20,8 +20,11 @@
         tailwind.config = {
           theme: {
             extend: {
+              colors: {
+                'secondary-btn-color':'#ABEF5F',
+              },
                 backgroundImage: {
-                'custom-gradient-1':'linear-gradient(0deg, #E9E9E9 0%, rgba(255, 255, 255, 0.00) 100%)'
+                'custom-gradient-1':'linear-gradient(180deg, #E9E9E9 0%, rgba(255, 255, 255, 0) 100%)',
               }
             }
           }
@@ -39,35 +42,10 @@
 
 <body class="font-manrope ">
     <header class="bg-custom-gradient-1">
-    <div class="w-4/5 mx-auto">
+    <div class=" p-5 lg:p-0 lg:w-4/5 mx-auto">
             <!-- Navbar Starts here -->
             <div class="navbar ">
                 <div class="navbar-start">
-                  <!-- <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Home</a></li>
-                      <li><a>Services</a></li>
-                      <li><a>Portfolio</a></li>
-                      <li><a>Blogs</a></li>
-                      <li><a>Contact us</a></li>
-                    </ul>
-                  </div> -->
                   <i class="fa-solid fa-arrow-up-long bg-[#ABEF5F] p-3 rotate-45 rounded-full"></i>
                   <a class="btn btn-ghost text-3xl text-[#212121] font-extrabold">Rinterio</a>
                 </div>
@@ -81,17 +59,35 @@
                       </ul>
                 </div>
                 <div class="navbar-end flex gap-4">
-                    <i class="fa-solid fa-magnifying-glass rounded-[56px] p-3 bg-[#FFF]"></i>
-                    <i class="fa-solid fa-cart-shopping rounded-[56px] p-3 bg-[#FFF]"></i>
-                    <div class="bg-[#ABEF5F] rounded-[32px] pl-20 pr-20 pt-2 pb-2 lg:pr-5 lg:pl-5 flex gap-2">
+                    <i class="fa-solid fa-magnifying-glass rounded-[56px] p-3 bg-[#FFF] hidden lg:block"></i>
+                    <i class="fa-solid fa-cart-shopping rounded-[56px] p-3 bg-[#FFF] hidden lg:block"></i>
+                    <i class="fa-solid fa-bars rounded-[56px] p-3 bg-[#FFF] lg:hidden"></i>
+                    <div class="bg-[#ABEF5F] rounded-[32px] pl-20 pr-20 pt-2 pb-2 lg:pr-5 lg:pl-5 lg:flex gap-2 hidden">
                         <button class="text-xl font-extrabold  ">Book Consult</button>
                         <i class="fa-solid fa-arrow-up-long text-[#FFFFFF] bg-[#1C1C1C] rotate-45 rounded-[32px] p-3"></i>
                     </div>
                 </div>
               </div>
             <!-- Navbar ends here -->
-    
+              
         </div>
+        <!-- banner starts here -->
+        <div class="flex flex-col gap-6 items-center justify-center lg:mb-24">
+          <div>
+            <img src="./assets/banner.png" alt="">
+          </div>
+           <div>
+            <h3 class="font-extrabold text-6xl text-center max-w-[1000px]">A barn house of this design has a striking appearance</h3>
+           </div>
+           <div>
+            <p class="max-w-[960px] font-medium text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+           </div>
+           <div class="bg-[#ABEF5F80] rounded-[32px] pl-20 pr-20 pt-2 pb-2 lg:pr-5 lg:pl-5 flex gap-2 border border-secondary-btn-color">
+            <button class="text-xl font-extrabold  ">View Details</button>
+            <i class="fa-solid fa-arrow-up-long text-[#1C1C1C] bg-secondary-btn-color rotate-45 rounded-[32px] p-3"></i>
+        </div>
+         </div>
+        <!-- banner ends here -->
     </header>
     <main>
 
